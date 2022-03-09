@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileView" customModule="Netology_IB_Instruments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emD-1S-LsS">
+                    <rect key="frame" x="140" y="64" width="264" height="30"/>
+                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8q-Di-H8R">
+                    <rect key="frame" x="140" y="111" width="264" height="30"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="120" translatesAutoresizingMaskIntoConstraints="NO" id="wFf-Xm-fCP">
+                    <rect key="frame" x="5" y="64" width="125" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="2w2-8F-u5i"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="125" id="HEJ-I9-7Dy"/>
+                        <constraint firstAttribute="height" constant="125" id="hkS-79-TOe"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="wO2-wg-xnG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pP-SF-sPM">
+                    <rect key="frame" x="140" y="158" width="264" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.38823529410000002" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Подпись пользователя" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="euR-El-d36">
+                    <rect key="frame" x="10" y="209" width="394" height="643"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="394" id="3Jk-Do-Y0Q"/>
+                        <constraint firstAttribute="height" constant="150" id="7pZ-PU-ZN7"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="9UC-Yu-xbD"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="It4-gn-1h6"/>
+                        <constraint firstAttribute="width" constant="394" id="dps-xD-aNG"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="394" id="hVd-9R-nYa"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="c8q-Di-H8R" firstAttribute="top" secondItem="emD-1S-LsS" secondAttribute="bottom" constant="17" id="0h1-bo-12L"/>
+                <constraint firstItem="emD-1S-LsS" firstAttribute="leading" secondItem="wFf-Xm-fCP" secondAttribute="trailing" constant="10" id="14I-Uc-Gm0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="euR-El-d36" secondAttribute="trailing" constant="10" id="1rp-9l-0k5"/>
+                <constraint firstItem="c8q-Di-H8R" firstAttribute="leading" secondItem="wFf-Xm-fCP" secondAttribute="trailing" constant="10" id="2tZ-aI-9Di"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="top" secondItem="wFf-Xm-fCP" secondAttribute="bottom" constant="20" id="6Sr-JH-EX3"/>
+                <constraint firstItem="c8q-Di-H8R" firstAttribute="leading" secondItem="wFf-Xm-fCP" secondAttribute="trailing" constant="10" id="8e9-V8-WIe"/>
+                <constraint firstAttribute="trailing" secondItem="euR-El-d36" secondAttribute="trailing" constant="10" id="8ke-ko-f04"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="euR-El-d36" secondAttribute="bottom" constant="10" id="9Vd-ME-Zde"/>
+                <constraint firstItem="8pP-SF-sPM" firstAttribute="leading" secondItem="wFf-Xm-fCP" secondAttribute="trailing" constant="10" id="9Ve-IP-SVf"/>
+                <constraint firstItem="emD-1S-LsS" firstAttribute="leading" secondItem="wFf-Xm-fCP" secondAttribute="trailing" constant="10" id="Acz-aD-NJR"/>
+                <constraint firstItem="emD-1S-LsS" firstAttribute="leading" secondItem="wFf-Xm-fCP" secondAttribute="trailing" constant="10" id="CIr-wS-6ou"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c8q-Di-H8R" secondAttribute="trailing" constant="10" id="DAB-YY-S9J"/>
+                <constraint firstItem="c8q-Di-H8R" firstAttribute="top" secondItem="emD-1S-LsS" secondAttribute="bottom" constant="17" id="E7S-i5-LtD"/>
+                <constraint firstItem="wFf-Xm-fCP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="GQh-4x-5dJ"/>
+                <constraint firstItem="8pP-SF-sPM" firstAttribute="leading" secondItem="wFf-Xm-fCP" secondAttribute="trailing" constant="10" id="IaP-s5-FEY"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="top" secondItem="wFf-Xm-fCP" secondAttribute="bottom" constant="10" id="Ioq-ww-VmU"/>
+                <constraint firstItem="emD-1S-LsS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="JQ1-Me-x1x"/>
+                <constraint firstItem="8pP-SF-sPM" firstAttribute="leading" secondItem="wFf-Xm-fCP" secondAttribute="trailing" constant="10" id="KC8-Yv-1Xd"/>
+                <constraint firstItem="emD-1S-LsS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="LMl-Zk-hxz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="euR-El-d36" secondAttribute="trailing" constant="10" id="Lsk-23-J1t"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="top" secondItem="wFf-Xm-fCP" secondAttribute="bottom" constant="20" id="MTr-VL-aFn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c8q-Di-H8R" secondAttribute="trailing" constant="10" id="MyP-3x-oje"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="top" secondItem="wFf-Xm-fCP" secondAttribute="bottom" constant="20" id="NYD-fo-Tph"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="top" secondItem="wFf-Xm-fCP" secondAttribute="bottom" constant="20" id="PHf-qV-DB5"/>
+                <constraint firstItem="c8q-Di-H8R" firstAttribute="leading" secondItem="wFf-Xm-fCP" secondAttribute="trailing" constant="10" id="Pka-gA-OXW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="euR-El-d36" secondAttribute="trailing" constant="10" id="R2B-gs-rdL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="euR-El-d36" secondAttribute="bottom" id="RQg-H7-P2b"/>
+                <constraint firstItem="wFf-Xm-fCP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="S9I-Dc-JVT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="emD-1S-LsS" secondAttribute="trailing" constant="10" id="V4h-wa-P5I"/>
+                <constraint firstItem="emD-1S-LsS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="WGo-0x-gJr"/>
+                <constraint firstItem="8pP-SF-sPM" firstAttribute="top" secondItem="c8q-Di-H8R" secondAttribute="bottom" constant="17" id="WtL-LR-C0s"/>
+                <constraint firstItem="emD-1S-LsS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="cMl-ch-CaV"/>
+                <constraint firstItem="8pP-SF-sPM" firstAttribute="top" secondItem="c8q-Di-H8R" secondAttribute="bottom" constant="18" id="dcM-yC-GYu"/>
+                <constraint firstItem="c8q-Di-H8R" firstAttribute="top" secondItem="emD-1S-LsS" secondAttribute="bottom" constant="17" id="f3U-jQ-F3I"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8pP-SF-sPM" secondAttribute="trailing" constant="10" id="grp-YK-jvG"/>
+                <constraint firstItem="emD-1S-LsS" firstAttribute="leading" secondItem="wFf-Xm-fCP" secondAttribute="trailing" constant="10" id="hBp-md-eJ2"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="5" id="hKo-dq-dzR"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="ha6-qe-Ro8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="euR-El-d36" secondAttribute="trailing" constant="10" id="itL-Oe-2Yg"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="top" secondItem="wFf-Xm-fCP" secondAttribute="bottom" constant="30" id="jaJ-JP-6nX"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="top" secondItem="wFf-Xm-fCP" secondAttribute="bottom" constant="20" id="oJI-El-OS8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="emD-1S-LsS" secondAttribute="trailing" constant="10" id="oaz-FK-Kk3"/>
+                <constraint firstItem="8pP-SF-sPM" firstAttribute="top" secondItem="c8q-Di-H8R" secondAttribute="bottom" constant="17" id="owf-aP-K1l"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="qzt-M7-5Vo"/>
+                <constraint firstItem="wFf-Xm-fCP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="rRD-Th-FxU"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="uvO-b5-PC8"/>
+                <constraint firstItem="wFf-Xm-fCP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="uy5-Q3-SJ9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8pP-SF-sPM" secondAttribute="trailing" constant="10" id="vLr-ee-Abf"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="vbV-ef-ttM"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="vf1-Pz-KEW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="emD-1S-LsS" secondAttribute="trailing" constant="10" id="ye6-kk-Q7q"/>
+                <constraint firstItem="euR-El-d36" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="zc7-Y2-4o8"/>
+            </constraints>
+            <connections>
+                <outlet property="Birthday" destination="c8q-Di-H8R" id="fdE-hm-vPq"/>
+                <outlet property="City" destination="8pP-SF-sPM" id="bc4-lq-BDj"/>
+                <outlet property="Name" destination="emD-1S-LsS" id="byN-V9-4Sr"/>
+            </connections>
+            <point key="canvasLocation" x="135.9375" y="82.608695652173921"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="120" width="90" height="90"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
